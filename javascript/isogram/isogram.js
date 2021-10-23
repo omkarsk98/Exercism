@@ -1,3 +1,4 @@
+//check if the word is iscgram
 export const isIsogram = (word) => {
   let wordCounts = word
     .toLowerCase()
