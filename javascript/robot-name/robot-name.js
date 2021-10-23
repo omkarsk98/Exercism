@@ -31,7 +31,8 @@ export class Robot {
   }
 
   getRandomFrom(list) {
-    return list[Math.floor(Math.random() * list.length)]
+    let randomValue = list[Math.floor(Math.random() * list.length)]
+    return randomValue
   }
 
   createName(){
@@ -41,11 +42,11 @@ export class Robot {
   }
 
   getUniqueName() {
-    let name = this.createName();
-    while(nameList.includes(name))
-      name = this.createName();
-    nameList.push(name);
-    return name;
+    let robotName = this.createName();
+    while(nameList.includes(robotName))
+      robotName = this.createName();
+    nameList.push(robotName);
+    return robotName;
   }
   
   getName() {
