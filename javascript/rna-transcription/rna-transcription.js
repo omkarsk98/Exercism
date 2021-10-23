@@ -4,7 +4,8 @@
 //
 
 export const toRna = (dnas) => {
-  return dnas.split("").map(dna => TRANSCRIPTS[dna]).join("");
+  let Rna = dnas.split("").map(dna => TRANSCRIPTS[dna]).join("");
+  return Rna
 };
 
 const TRANSCRIPTS = {
