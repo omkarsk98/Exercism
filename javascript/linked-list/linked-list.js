@@ -14,10 +14,10 @@ class Node {
 export class LinkedList {
   push(val) {
     let node = new Node(val);
-    if (!this.head)
-      this.head = node;
     if (!this.tail)
       this.tail = node;
+    if (!this.head)
+      this.head = node;
     else {
       node.prevNode = this.tail;
       this.tail.nextNode = node;
